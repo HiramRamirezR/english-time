@@ -1,3 +1,74 @@
+/* Definir las fuentes */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente principal */
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif; /* Fuente para títulos */
+  font-size: 36px;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif; /* Fuente para subtítulos */
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Importar fuentes de Google */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700|Lato:400,700');
+
+/* Estilos para el Navbar */
+.sticky-nav {
+  background-color: #002b4e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed; /* Hace que el Navbar sea fijo */
+  top: 0; /* Lo coloca en la parte superior de la ventana */
+  width: 100%; /* Ocupa todo el ancho de la ventana */
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.sticky-nav .logo a {
+  img {
+    width: 150px;
+  }
+}
+
+.sticky-nav .menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-nav .menu li {
+  margin-right: 20px;
+}
+
+.sticky-nav .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.sticky-nav .boton-entrada {
+  background-color: #fff;
+  color: #007BFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 40px;
+}
+
+
+
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
@@ -10,6 +81,7 @@ header {
   color: #fff;
   text-align: center;
   padding: 20px;
+  margin-top: 50px;
 }
 
 h1 {
@@ -23,6 +95,19 @@ p {
 section {
   padding: 20px;
 }
+
+/* Estilos para la imagen o video */
+#imagen-o-video {
+  text-align: center;
+}
+
+#imagen-o-video img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block; /* Esto es importante para centrar verticalmente en línea con el texto */
+  margin: 0 auto; /* Esto centrará horizontalmente la imagen */
+}
+
 
 /* Estilos para el formulario de contacto o registro */
 #formulario-contacto {
