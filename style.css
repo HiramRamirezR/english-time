@@ -115,6 +115,14 @@ section {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   padding: 20px;
+  text-align: center;
+}
+#formulario-contacto a {
+  color: var(--verde);
+  text-decoration: none;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 /* Estilos para los botones de llamada a la acción */

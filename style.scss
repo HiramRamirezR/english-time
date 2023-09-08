@@ -120,6 +120,15 @@ section {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   padding: 20px;
+  text-align: center;
+
+  a {
+    color: var(--verde);
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
 }
 
 /* Estilos para los botones de llamada a la acción */
@@ -163,7 +172,6 @@ ul, ol {
 /* Estilos para las secciones de contenido */
 section {
   margin-bottom: 20px;
-  // background-color: var(--azul-oscuro);
 }
 
 /* Estilos para el encabezado de enlaces (FAQ, Contacto, etc.) */
