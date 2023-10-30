@@ -1,9 +1,9 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700|Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,800|Open+Sans:400,700|Lato:400,700,800");
 :root {
-  --rojo: #e6b82f;
-  --gris-oscuro: #383b3e;
-  --gris-claro: #6b6b6b;
+  --rojo: #fd8b1a;
+  --gris-oscuro: #2a2d31;
+  --gris-claro: #ebebeb;
 }
 
 /* Definir las fuentes */
@@ -18,7 +18,8 @@ h1 {
 
 h2 {
   font-family: "Lato", sans-serif; /* Fuente para subtítulos */
-  font-size: 24px;
+  font-size: 2.25rem;
+  font-weight: 800;
 }
 
 p {
@@ -98,7 +99,7 @@ section {
   padding: 20px;
 }
 
-/* Estilos para la imagen o video */
+/* Estilos para la imagen */
 #imagen {
   text-align: center;
 }
@@ -109,21 +110,6 @@ section {
   display: inline-block; /* Esto es importante para centrar verticalmente en línea con el texto */
   margin: 0 auto; /* Esto centrará horizontalmente la imagen */
   border-radius: 10px;
-}
-
-/* Estilos para el formulario de contacto o registro */
-#formulario-contacto {
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-}
-#formulario-contacto a {
-  color: var(--rojo);
-  text-decoration: none;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
 }
 
 /* Estilos para los botones de llamada a la acción */
@@ -154,14 +140,19 @@ button:hover, .cta-button:hover {
 }
 
 /* Estilos para los testimonios */
-#testimonios {
-  background-color: #f9f9f9;
+.testimonios {
+  background-color: var(--gris-claro);
+  width: 70%;
   padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5%;
 }
 
-/* Estilos para los elementos de lista (por ejemplo, beneficios clave) */
-ul, ol {
-  list-style: none;
+#beneficios, #programa, #recursos, #faq, #redes-sociales, #garantia-calidad {
+  width: 70%;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 /* Estilos para las secciones de contenido */
