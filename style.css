@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700|Lato:400,700");
 :root {
-  --verde: #7ac57a;
-  --azul-oscuro: #002b4e;
-  --azul-claro: #205ea1;
+  --rojo: #e6b82f;
+  --gris-oscuro: #383b3e;
+  --gris-claro: #6b6b6b;
 }
 
 /* Definir las fuentes */
@@ -28,7 +28,7 @@ p {
 /* Importar fuentes de Google */
 /* Estilos para el Navbar */
 .sticky-nav {
-  background-color: var(--azul-oscuro);
+  background-color: var(--gris-oscuro);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,13 +56,13 @@ p {
 
 .sticky-nav .menu a {
   text-decoration: none;
-  color: var(--verde);
+  color: var(--rojo);
   font-weight: bold;
 }
 
 .sticky-nav .boton-entrada {
   background-color: #fff;
-  color: var(--azul-claro);
+  color: var(--gris-claro);
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
@@ -86,7 +86,8 @@ header {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 p {
@@ -98,11 +99,11 @@ section {
 }
 
 /* Estilos para la imagen o video */
-#imagen-o-video {
+#imagen {
   text-align: center;
 }
 
-#imagen-o-video img {
+#imagen img {
   max-width: 70%;
   height: auto;
   display: inline-block; /* Esto es importante para centrar verticalmente en línea con el texto */
@@ -118,7 +119,7 @@ section {
   text-align: center;
 }
 #formulario-contacto a {
-  color: var(--verde);
+  color: var(--rojo);
   text-decoration: none;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -127,7 +128,7 @@ section {
 
 /* Estilos para los botones de llamada a la acción */
 button, .cta-button {
-  background-color: var(--azul-claro);
+  background-color: var(--gris-claro);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -136,12 +137,12 @@ button, .cta-button {
 }
 
 button:hover, .cta-button:hover {
-  background-color: var(--azul-claro);
+  background-color: var(--gris-claro);
 }
 
 /* Estilos para los enlaces de redes sociales */
 #redes-sociales a {
-  color: var(--azul-claro);
+  color: var(--gris-claro);
   text-decoration: none;
   margin-right: 10px;
 }
@@ -170,9 +171,21 @@ section {
 
 /* Estilos para el encabezado de enlaces (FAQ, Contacto, etc.) */
 h2 {
-  font-size: 24px;
-  border-bottom: 2px solid var(--azul-claro);
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.contactar {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: var(--rojo);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactar:hover {
+  background-color: var(--rojo);
 }/*# sourceMappingURL=style.css.map */
