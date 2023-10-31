@@ -58,6 +58,7 @@ p {
 .menu-icon {
   font-size: 24px;
   cursor: pointer;
+  display: none;
 }
 
 #menu-toggle {
@@ -142,10 +143,21 @@ button:hover, .cta-button:hover {
 }
 
 /* Estilos para los enlaces de redes sociales */
-#redes-sociales a {
-  color: var(--gris-claro);
-  text-decoration: none;
-  margin-right: 10px;
+#redes-sociales {
+
+  .icons {
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: var(--rojo);
+      margin: 10px;
+    }
+  }
 }
 
 /* Estilos para el mapa de ubicación (si aplicable) */
@@ -164,9 +176,13 @@ button:hover, .cta-button:hover {
   border-radius: 5%;
 }
 
-#beneficios, #programa, #recursos, #faq, #redes-sociales, #clases {
+#beneficios, #programa, #recursos, #faq, #redes-sociales, #clases, .oferta {
   width: 70%;
   margin: 0 auto;
+}
+
+.oferta {
+  text-align: center;
 }
 
 /* Estilos para las secciones de contenido */
@@ -233,5 +249,6 @@ a {
     display: block; /* Muestra el ícono de hamburguesa en dispositivos móviles */
     font-size: 24px;
     cursor: pointer;
+    color: var(--rojo);
   }
 }
